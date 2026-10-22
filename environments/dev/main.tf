@@ -1,8 +1,9 @@
-
+provider "aws" {
+  region = var.globalConfigs.region
+}
 
 module lambda {
-    source = "./modules/lambda"
-
+    source = "./../../modules/compute/lambda"
     # variables
     globalConfigs = var.globalConfigs
 }

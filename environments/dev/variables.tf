@@ -1,9 +1,8 @@
 # global configs
 variable globalConfigs {
-  type        = Object({
+  type        = object({
     region  = string
     environment = string
     appName = string
   })
-  description = "global configs"
 }
